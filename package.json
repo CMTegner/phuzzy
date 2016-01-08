@@ -1,0 +1,34 @@
+{
+  "name": "phuzzy",
+  "version": "1.0.0",
+  "description": "Perform a fuzzy filter on a collection of items",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "mkdir -p dist && babel index.js > dist/index.js",
+    "test": "standard index.js test.js && babel-node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMTegner/phuzzy.git"
+  },
+  "keywords": [
+    "fuzzy",
+    "search",
+    "filter"
+  ],
+  "author": "Christian Tegnér <christian.tegner@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMTegner/phuzzy/issues"
+  },
+  "homepage": "https://github.com/CMTegner/phuzzy#readme",
+  "dependencies": {
+    "lodash.escaperegexp": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "standard": "^5.4.1",
+    "tape": "^4.4.0"
+  }
+}
